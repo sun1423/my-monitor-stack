@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: monitor-stack
+    env: docker
+    plan: free
+    # This tells Render to look for the Dockerfile in the current folder
+    dockerContext: .
+    envVars:
+      - key: PORT
+        value: 3000
