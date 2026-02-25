@@ -1,0 +1,9 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    # Since they are in the same container, we use localhost
+    url: http://localhost:9090
+    access: proxy
+    isDefault: true
